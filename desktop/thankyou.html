@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<title>[PRODUCT-NAME]</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="image/png" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+<link rel="stylesheet" type="text/css" href="assets/fonts/font.css">
+
+<script type="text/javascript">
+	function getDate(days) {      
+	var monthNames = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");    
+	var now = new Date();   
+	now.setDate(now.getDate() + days);   
+	var nowString =  monthNames[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear();   
+	document.write(nowString); 
+	}
+</script>
+</head>
+
+<body id="thankyou-body">
+	<div class="banner">
+       <div class="wrapper">
+        <img src="assets/img/logo.png" alt="[PRODUCT NAME]" class="logo"/>
+        <ul class="steps">					
+            <li class="step1">1. SHIPPING</li>
+            <li class="step2">2. Payment</li>
+            <li class="step3">3. SUMMARY</li>
+        </ul>
+    </div>
+    </div>
+<div class="wrapper after">
+    <div class="thankyou-inner">
+        <div class="header-inner">
+            <h2>THANK YOU FOR YOUR PURCHASE</h2>
+            <p>We hope you enjoy the benefits of [PRODCUT-NAME].</p>
+            <p>Your order is scheduled to arrive by <span class="bl"><script type="text/javascript">getDate(5);</script></span></p>
+        </div>
+        
+        <div class="thankyou-info">
+            
+            <div class="order-id">
+            	<h2>ORDER RECEIPT</h2>
+                <p><span class="bl">Order placed:</span> <script type="text/javascript">getDate(0);</script></p>
+            </div>  
+            <img src="assets/img/prod.png" alt="[Product Name] product shot" class="prod" />         
+            <div class="thankyou-prices"> 
+            	<p class="ord-no">Order number: 958483214</p>				
+                <script class="product-description" type="text/x-handlebars-template">	
+                  <p class="bl">{{prodname}}</p>				
+                  <p>{{proddesc.assets}}</p>
+                  <p>{{proddesc.description}}</p>
+                </script>
+                <div class="product-content"></div>
+                <div class="prices">
+                    <p class="bl">Price:</p>
+                    <p class="bl">$0.00</p>
+                </div>
+                <div class="prices">
+                    <p>Shipping & Handling:</p>
+                    <p>$4.95</p>
+                </div>
+                <div class="prices">
+                    <p>TOTAL</p>
+                    <p>$4.95</p>
+                </div>
+            </div>					
+        </div>
+        <div class="thankyou-info">            
+            <div class="order-id">
+            	<h2>ORDER RECEIPT</h2>
+                <p><span class="bl">Order placed:</span> <script type="text/javascript">getDate(0);</script></p>
+            </div>  
+            <img src="assets/img/up-prod.png" alt="[Product Name] product shot" class="prod" />
+            <div class="thankyou-prices"> 
+            	<p class="ord-no">Order number: 958483214</p>
+                <script class="product-description" type="text/x-handlebars-template">	
+				  <p>Order number: {{ordno}}</p>	
+                  <p class="bl">{{prodname}}</p>				
+                  <p>{{proddesc.assets}}</p>
+                  <p>{{proddesc.description}}</p>
+                </script>
+                <div class="product-content"></div>
+                <div class="prices">
+                    <p class="bl">Price:</p>
+                    <p class="bl">$0.00</p>
+                </div>
+                <div class="prices">
+                    <p>Shipping & Handling:</p>
+                    <p>$4.95</p>
+                </div>
+                <div class="prices">
+                    <p>TOTAL</p>
+                    <p>$4.95</p>
+                </div>
+            </div>					
+        </div>
+    </div>
+</div>
+<footer>
+    <p>
+        <a href="">TERMS |</a>
+        <a href="">PRIVACY POLICY |</a>
+        <a href="">CONTACT US</a>
+    </p>
+    <p>2016 © [PRODUCT-NAME]</p>
+</footer>
+
+<script type="text/javascript" src="assets/vendor/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="assets/js/Adready.min.js"></script>
+<!--<script type="text/javascript" src="assets/js/handlebars.min-latest.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

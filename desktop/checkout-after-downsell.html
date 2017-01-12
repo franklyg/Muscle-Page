@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"> <!--<![endif]-->
+<head>
+<title>[PRODUCT-NAME]</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+<link rel="stylesheet" type="text/css" href="assets/fonts/font.css">
+
+<script type="text/javascript">
+	function getDate(days) {      
+	var monthNames = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");    
+	var now = new Date();   
+	now.setDate(now.getDate() + days);   
+	var nowString =  monthNames[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear();   
+	document.write(nowString); 
+	}
+</script>
+</head>
+
+<body id="checkout-body">
+<div class="banner">
+	<div class="wrapper">
+        <img src="assets/img/logo.png" alt="[PRODUCT NAME]" class="logo"/>
+        <ul class="steps">					
+            <li class="step1">1. SHIPPING</li>
+            <li class="step2">2. Payment</li>
+            <li class="step3">3. SUMMARY</li>
+        </ul>
+    </div>
+</div>
+<div class="wrapper after">
+    <div class="left">
+        <div class="info">
+            <div class="reminder">
+                <p><img src="assets/img/eye.png" alt="eye" class="eye"/> 13 others are viewing this offer right nw - <span class="bl count-up">0:00</span></p>
+            </div>
+            <div class="info-content">
+            	<h5><img src="assets/img/tik.jpg" alt="tik" class="tik"> DISCOUNT ACTIVATED, SAVINGS APPLIED!</h5>
+                <p ><span class="green bl">Great Choice, Jane!</span> You’re taking your first step towards a better body. Act now so you don’t miss out on this offer!</p>
+                
+                <p>Just pay a small shipping fee. Enjoy expedited delivery to <span class="bl pink">Boulder, CO</span>. <br>Your order is scheduled to arrive by <span class="bl pink"><script type="text/javascript">getDate(5);</script></span></p>
+                
+                <p><span class="bl" style="float:left;">Product Availability:</span><img src="assets/img/low-stock.jpg" style="float:left; margin:-3px 4px 0 4px;">: Warning: Last items in stock.</p>
+            </div>
+        </div>
+        <div class="prod-info">
+            <div class="prod-info-inner">
+                <img src="assets/img/prod.png" class="[Product Name] product shot"/>
+                <div class="prod-desc">
+                    <div id="product-details">
+                        <script class="product-description" type="text/x-handlebars-template">	
+                          <p class="bl">{{prodname}}</p>				
+                          <p>{{proddesc.assets}}</p>
+                          <p>{{proddesc.description}}</p>
+                        </script>
+                        <div class="product-content"></div>
+                    </div>
+                    <div class="prices">
+                        <div class="bl">
+                            <p>Price</p>
+                            <p>$0.00</p>
+                        </div>
+                        <div>
+                            <p>Shipping & Handling</p>
+                            <p>$4.95</p>
+                        </div>
+                        <div>
+                            <p style="color:#F00;">Discount Applied</p>
+                            <p style="color:#F00;">-50%</p>
+                        </div>
+                        <div>
+                            <p>TOTAL</p>
+                            <p>$1.95</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/img/cp-arrow.png" alt="CTA Arrow" class="arrow"/>
+            <center><img src="assets/img/cp-shipping-logo.jpg"></center>
+        </div>
+        <div class="terms">
+            <p>By placing an order, you will pay S&H to receive a 30 day supply. You will also be automatically enrolled in our membership program. The program will charge you $______ on the 14th day of your order date for a monthly supply and every 30 days thereafter until you cancel. You can cancel at any time by calling xxx-xxx-xxxx. If you cancel before the 14th day of your order date, you pay the S&H of your 30 day supply. If you cancel after the 14th day of your order date, you shall pay for the 30 day supply plus any future supplies without refund.</p>
+        </div>
+    </div>
+    <form>
+        <div class="form-top"><img src="assets/img/shipping-info.png"></div>
+        <div class="form-container">
+            <div class="">
+                <div class="input-holder">
+                    <label>First Name</label>
+                    <input type="text"/>
+                </div>
+                <div class="input-holder">
+                    <label>Last Name</label>
+                    <input type="text"/>
+                </div>
+                <div class="input-holder">
+                    <label>Address</label>
+                    <input type="text"/>
+                </div>
+                <div class="input-holder">
+                    <label>City:</label>
+                    <input type="text"/>
+                </div>
+                <div class="input-holder">
+                    <label>State:</label>
+                    <input type="text"/>
+                </div>
+                <div class="input-holder">
+                    <label>ZIP:</label>
+                    <input type="text"/>
+                </div>
+                <div class="input-holder">
+                    <label>Phone:</label>
+                    <input type="text"/>
+                </div>
+                <div class="input-holder">
+                    <label>Email:</label>
+                    <input type="text"/>
+                </div>		
+            </div>
+        </div>
+        <div class="form-top"><img src="assets/img/billing-info.png"></div>
+        <div class="form-container">
+            <div class="billing-info">
+                <input type="checkbox" checked/>
+                My billing address is the same as my shipping address	
+            </div>
+            <div class="hidden-fields">
+                <div class="input-holder">
+                    <label>First Name</label>
+                    <input type="text"/>
+                </div>
+                <div class="input-holder">
+                    <label>Last Name</label>
+                    <input type="text"/>
+                </div>
+                <div class="input-holder">
+                    <label>Address</label>
+                    <input type="text"/>
+                </div>
+                <div class="input-holder">
+                    <label>City:</label>
+                    <input type="text"/>
+                </div>
+                <div class="input-holder">
+                    <label>State:</label>
+                    <input type="text"/>
+                </div>
+                <div class="input-holder">
+                    <label>ZIP:</label>
+                    <input type="text"/>
+                </div>
+                <div class="input-holder">
+                    <label>Phone:</label>
+                    <input type="text"/>
+                </div>
+                <div class="input-holder">
+                    <label>Email:</label>
+                    <input type="text"/>
+                </div>		
+            </div>
+        </div> 
+        <div class="form-top">
+        	<img src="assets/img/payment-info.png">
+            <img src="assets/img/cards.png" class="cards">
+        </div>
+        <div class="form-container">
+            <div class="input-holder">
+                <label>Card Type:</label>
+                <select class="cc-type">
+                	<option>Visa</option>
+                    <option>Mastercard</option>
+                </select>
+            </div>
+            <div class="input-holder">
+                <label>Card Number:</label>
+                <input type="text"/>
+            </div>
+            <div class="input-holder">
+                <label>Exp. Date</label>
+                <select class="exp-month">
+                	<option value="" selected>Month</option>
+                    <option value="">Jan</option>
+                    <option value="">Feb</option>
+                    <option value="">March</option>
+                    <option value="">April</option>
+                    <option value="">May</option>
+                    <option value="">June</option>
+                    <option value="">July</option>
+                    <option value="">Aug</option>
+                    <option value="">Sep</option>
+                    <option value="">Oct</option>
+                    <option value="">Nov</option>
+                    <option value="">Dec</option>
+                </select>
+                <span class="sls">/</span>
+                <select class="exp-year">
+                	<option value="" selected>Year</option>
+                    <option value="">2016</option>
+                    <option value="">2017</option>
+                    <option value="">2018</option>
+                    <option value="">2019</option>
+                    <option value="">2020</option>
+                    <option value="">2021</option>
+                    <option value="">2022</option>
+                    <option value="">2023</option>
+                    <option value="">2024</option>
+                    <option value="">2025</option>
+                    <option value="">2026</option>
+                </select>
+            </div>
+            <div class="input-holder">
+                <label>CVV:</label>
+                <input type="text" placeholder="CVV" class="cvv-input"/>
+                <a href="#">What is this?</a>
+            </div>
+        </div>
+        <div class="form-container button">
+            <p><img src="assets/img/lock.png" alt="Lock" class="lock"/>Secure 256 Bit Encrypted Connection</p>
+            <input type="submit" value=""/>
+            <img src="assets/img/cp-logo.png" alt="Credit Card Logos" class="card-logos">
+        </div>
+    </form>
+</div>
+<!--<div id = "popover">
+    <div id = "pop-box">
+        <div>
+            <h2>WAIT!</h2>
+            <div class="para">
+                <h3>Are you sure you want to leave?</h3>
+                <p class="dont-miss"><span class="f34 grey">DON'T MISS OUT ON THIS EXCLUSIVE OFFER</span></p>
+                <div class="discount-content">
+                    <img src="assets/img/lp-prod.png" class="fl prod"/>
+                    <div class="fr content">
+                        <p class="banner-down"><span class="bl">50% OFF</span> SHIPPING COUPON</p>
+                        <ul>
+                            <li><img src="assets/img/check-downsell.png" /> Safe and Secure</li>
+                            <li><img src="assets/img/check-downsell.png" /> Limited Supply</li>
+                            <li><img src="assets/img/check-downsell.png" /> Only Takes a Minute</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        	<p><a href="index.html" id="down-btn">APPLY MY DISCOUNT</a></p>
+        </div>
+        <div id="pop-terms" class="after">
+            <p>We are confident that [PRODUCT NAME] is the premium nitric oxide booster that you’ve been looking for.
+[PRODUCT NAME]’s ingredients energize, nourish and REPLENISH the body. Think of it as a tune up for your body. By supporting the glands and organs responsible for optimal metabolic function – you can maximize pump while feeling great. Get the “Right Stuff” to absolutely MAXIMIZE each and every workout. Claim your exclusive trial of [PRODUCT NAME] now and start seeing results.<a href="">No thanks, I’d rather not have a better body.</a></p>
+        </div>
+    </div>
+    <div id = "overlay"></div>
+</div>-->
+<footer>
+    <p><a href="">TERMS |</a><a href="">PRIVACY POLICY |</a><a href="">CONTACT US</a></p>
+    <p>2016 © [PRODUCT-NAME]</p>
+</footer>
+
+<script type="text/javascript" src="assets/vendor/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="assets/js/Adready.min.js"></script>
+<!-- <script type="text/javascript" src="assets/js/handlebars.min-latest.js"></script> -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
